@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+body {
+  background-color: #ed8bb0;
+}
+.estoque {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.estoque div {
+  width: 300px;
+}
+.estoque img {
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+legend {
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  color: #5c341a;
+}
+
+.descricao{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container{
+  width: 200px;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease; 
+  border-radius: 10px;
+}
+
+.container button{
+  padding: 10px;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  background-color: #452816;
+  color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container button:hover{
+  background-color: #8f481d;
+}
+
+.container:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}

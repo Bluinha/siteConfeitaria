@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --primary: #5C341A;
+    --secondary: #f8f5f2;
+    --text: #333;
+    --highlight: #d49d77;
+}
+
+body {
+    background-color: var(--secondary);
+    padding: 30px;
+    font-family: "Quicksand", sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Container do bolo */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    max-width: 1000px; /* mais largo para dar destaque */
+}
+
+/* Imagem */
+img {
+    height: 350px;
+    width: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Texto ao lado da imagem */
+.texto {
+    max-width: 550px;
+    font-size: 19px;
+    color: var(--text);
+    text-align: justify;
+}
+
+/* Seções abaixo (mais simples) */
+article {
+    background: transparent; /* sem card pesado */
+    padding: 10px 0;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Títulos das seções */
+.titulo {
+    color: var(--primary);
+    background: none;
+    font-weight: 700;
+    text-align: left;
+    margin: 25px 0 10px 0;
+    box-shadow: none;
+    font-size: 22px;
+}
+
+/* Listas */
+ul, ol {
+    line-height: 1.7;
+    margin: 0 0 20px 20px;
+    padding: 0;
+    font-size: 16px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Destaques */
+strong {
+    color: var(--primary);
+}

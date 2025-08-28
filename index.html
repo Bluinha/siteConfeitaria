@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>site doceria</title>
+  <link rel="icon" type="image/x-icon" href="imgs/logo.png">
+  <link rel="stylesheet" href="css/estiloIndex.css">
+  <link rel="stylesheet" href="css/busca.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="imgs/logo.png" alt="logo" style="cursor: pointer;" title="logo da doceria">
+    </a>
+    <h1>Gatoria Doces e Receitas</h1>
+  </header>
+
+  <nav>
+    <div class="buttons">
+        <a href="index.html"><button type="button">Página Principal</button></a>
+        <a href="pags/bolos.html" target="menu"><button type="button">Bolos</button></a>
+        <a href="pags/saborChoco.html" target="menu"><button type="button">Sabor Chocolate</button></a>
+        <a href="pags/saborMorango.html" target="menu"><button type="button">Sabor Morango</button></a>
+        <a href="pags/festas.html" target="menu"><button type="button">Festas</button></a>
+
+    </div>
+    <!-- 🔎 Campo de busca -->
+    <form action="buscar.html" method="get" class="formulario-busca" onsubmit="return false;">
+      <input type="text" name="q" placeholder="Buscar..." id="campoBusca" autocomplete="off" />
+        <button type="submit" class="btn-busca" aria-label="Buscar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="9" r="7"/>
+      <line x1="16" y1="16" x2="12.5" y2="12.5"/>
+    </svg>
+  </button>
+      <div id="sugestoes"></div>
+    </form>
+  </nav>
+
+  <iframe name="menu" src="pags/inicio.html" frameborder="0"></iframe>
+
+  <!-- importa JS no fim -->
+  <script src="script.js"></script>
+</body>
+</html>
